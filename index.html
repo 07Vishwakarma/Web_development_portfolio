@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anand || Portfolio</title>
+  <!-- Css File -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Tailwind css -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Icon cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
+</head>
+
+<body oncontextmenu="return false">
+  <!-- Loader section -->
+   
+  <div id="loader">
+    <h3>Tomorrow's</h3>
+    <h3>Brand,</h3>
+    <h3>today</h3>
+  </div>
+
+
+  <!-- Navigation section -->
+  <div class="header h-screen w-full secondary-bg secondary-color secondary-font">
+    <div class="navbar mt-10 absolute top-0 z-50 left-1/2 -translate-x-1/2 w-full ">
+      <nav class="flex justify-between items-center  colour30 rounded-full shadow-lg max-w-[40rem] mx-auto ">
+        <div>
+          <img src="./Assets/logo.png" alt="logo" class="w-16 h-16">
+        </div>
+        <!-- Hamburger menu for mobile -->
+        <div class="md:hidden mr-5 ">
+          <button id="menu-toggle" class=" focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Desktop menu -->
+        <ul class="hidden md:flex space-x-6  montserrat-regular items-center w-full justify-evenly">
+          <li class="hover:-translate-y-1 transition-transform">
+            <a href="#service" class="">Services</a>
+          </li>
+          <li class="hover:-translate-y-1 transition-transform">
+            <a href="#project" class="">Work</a>
+          </li>
+          <!-- <li class="hover:-translate-y-1 transition-transform">
+            <a href="#About" class="">About</a>
+          </li> -->
+          <li class="hover:-translate-y-1 transition-transform">
+            <a href="#Contact" class="">Let's Talk</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Mobile menu (hidden by default) -->
+      <div id="mobile-menu"
+        class="hidden secondary-bg secondary-color  md:hidden  bg-opacity-90 w-full absolute top-full left-0 p-4">
+        <ul class="flex flex-col space-y-4  montserrat-regular">
+          <li><a href="#service" class="block py-2">Services</a></li>
+          <li><a href="#project" class="block py-2">Work</a></li>
+          <!-- <li><a href="#About" class="block py-2">About</a></li> -->
+          <li><a href="#Contact" class="block py-2">Let's Talk</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="containr w-full h-full relative">
+      
+      <div class="absolute inset-0 w-full h-full bg-blob-scene"></div>
+      <div id="page1" class="relative flex flex-col items-center justify-center h-full text-center pt-14">
+        <h1 class="md:text-[6.8rem] lg:text-[8rem] text-6xl my-10 font-bold secondary-font capitalize">
+          <span class="block">
+            CREATIVE FUEL
+          </span>
+          <span class="block mt-2">
+            FOR YOUR BRAND
+          </span>
+        </h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project section -->
+  <div id="project" class="project ">
+    <div class=" text-foreground p-8 lg:h-full primary-bg primary-color ">
+      <h1 class="md:text-8xl lg:text-8xl text-5xl mb-10 font-bold  secondary-font capitalize">
+        Project's For Client
+      </h1>
+     <!-- Coding project -->
+      <h1 class="md:text-2xl lg:text-2xl text-2xl  font-bold  secondary-font capitalize">
+       Personal Project
+      </h1>
+      <hr class="w-full  mb-10">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+    
+
+        <div class=" box-bg rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105 primary-color  ">
+          <a href="https://gearo-e-commerce.netlify.app/">
+            <img src="./Assets/project2.png" alt="KFC project" class="w-full h-48 object-cover" />
+          </a>
+          <div class="p-4">
+            <h2 class="font-semibold text-lg capitalize secondary-font">
+              Gearo-E-commerce
+            </h2>
+            <p class="text-muted-foreground capitalize hind-medium">
+              Gearo is an e-commerce platform offering curated outdoor gear
+              and accessories. It provides high-quality products and a
+              seamless shopping experience for adventure enthusiasts
+            </p>
+          </div>
+        </div>
+
+      
+        
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- services section -->
+  <div id="fixed-image"
+    class="h-[30vw] w-[24vw] secondary-bg secondary-color  rounded-[15px] fixed z-[1] left-1/2 top-1/4 hidden bg-cover bg-center">
+  </div>
+  <div id="service" class="min-h-screen w-full secondary-bg secondary-color  p-8 ">
+    <div class=" text-left">
+      <h2 class="md:text-8xl lg:text-8xl text-5xl mb-10 font-bold  secondary-font capitalize">
+        Explore our services
+      </h2>
+
+    </div>
+    <div id="elem-container">
+      <div id="elem1"
+        class="elem group h-[150px] w-full relative border-b border-[#383838dc] overflow-hidden flex items-center px-[2vw] "
+        data-image='https://i.pinimg.com/564x/9a/8b/3f/9a8b3fe19e9a9057f499240a5e30ca8c.jpg'>
+        <div
+          class="overlay h-full w-full bg-[#a0a0a0] absolute left-0 top-[-100%] group-hover:top-0 transition-all ease-linear duration-300">
+        </div>
+        <h2 class="text-[6vw] sm:text-[5vw] md:text-4xl lg:text-3xl relative z-10 ">Website Design</h2>
+      </div>
+      <div
+        class="elem group h-[150px] w-full relative border-b border-[#38383864] overflow-hidden flex items-center px-[2vw]"
+        data-image="https://i.pinimg.com/564x/48/13/cc/4813cc379ab7f7288e0b5987609e1015.jpg">
+        <div
+          class="overlay h-full w-full bg-[#a0a0a0] absolute left-0 top-[-100%] group-hover:top-0 transition-all ease-linear duration-300">
+        </div>
+        <h2 class="text-[6vw] sm:text-[5vw] md:text-4xl lg:text-3xl relative z-10">Responsive Design</h2>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Contact -->
+  <div id="Contact" class="Contact p-6 primary-bg primary-color">
+    <div class="min-h-screen flex items-center justify-center p-6">
+      <div class="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h1 class="md:text-[70px] font-bold text-4xl md:leading-[70px]">
+            LET'S MAKE
+          </h1>
+          <h1 class="md:text-[70px] font-bold text-4xl md:leading-[70px]">
+            SOMETHING
+          </h1>
+          <h1 class="md:text-[70px] font-bold text-4xl md:leading-[70px]">
+            AWESOME.
+          </h1>
+        </div>
+        <div>
+
+          
+
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="48c59e8d-0841-4212-a53c-fa17258e2d3b" />
+            <input type="text" name="name" placeholder="Enter your name"
+              class="my-4 w-full p-3 primary-bg primary-color Font2 border border-zinc-600 focus:outline-none focus:border-zinc-100"
+              required />
+            <input type="email" name="email" id="email" placeholder="Enter your email" value=""
+              class="my-4 w-full p-3 primary-bg primary-color Font2 border border-zinc-600 focus:outline-none focus:border-zinc-100"
+              required />
+            <textarea name="message" placeholder="Enter your message" rows="4"
+              class="my-4 w-full p-3 primary-bg primary-color Font2 border border-zinc-600 focus:outline-none focus:border-zinc-100"
+              required></textarea>
+            <button type="submit"
+              class="my-4 w-full p-3 primary-bg primary-color Font2 border border-slate-600  font-bold hover:bg-[#ffffff00] transition-all hover:text-white">
+              SUBMIT
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="Footer secondary-bg secondary-color p-6">
+    <h1
+      class="text-[17vw] font-semibold  md:text-left lg:text-left text-center uppercase text-stroke hover:text-transparent transition-all ease-in-out cursor-none">
+      let's Talk
+    </h1>
+    <footer class="bg-background p-8 ">
+      <div class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div>
+          <h2 class="capitalize" class="text-xl font-semibold">Contact</h2>
+          <p class="capitalize">Anand Vishwakarma</p>
+          <p class="capitalize">maharashtra Ahmednagar</p>
+          <p class="hover:-translate-y-1 transition-transform capitalize">
+            +91 8888328271
+          </p>
+          <p class="hover:-translate-y-1 transition-transform">
+            anandvishwakarmw17@gmail.com
+          </p>
+        </div>
+        <div>
+          <h2 class="text-xl font-semibold">Pages</h2>
+          <ul>
+            <li class="hover:-translate-y-1 transition-transform">
+              <a href="index.html" class="">Home</a>
+            </li>
+            <li class="hover:-translate-y-1 transition-transform">
+              <a href="#work" class="">Work</a>
+            </li>
+            <li class="hover:-translate-y-1 transition-transform">
+              <a href="#work" class="">Services</a>
+            </li>
+            <li class="hover:-translate-y-1 transition-transform">
+              <a href="#Contact" class="">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-xl font-semibold">Expertise</h2>
+          <ul>
+            <li class="hover:-translate-y-1 transition-transform">
+              <a href="#" class="capitalize hover:-translate-y-1 transition-transform">frontend</a>
+            </li>
+            <li class="hover:-translate-y-1 transition-transform">
+              <a href="#" class="capitalize hover:-translate-y-1 transition-transform">responsive design</a>
+            </li>
+            <li class="hover:-translate-y-1 transition-transform">
+              <a href="#" class="capitalize hover:-translate-y-1 transition-transform">backend</a>
+            </li>
+            <li class="hover:-translate-y-1 transition-transform">
+              <a href="#" class="capitalize hover:-translate-y-1 transition-transform">Ui Degin</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-xl font-semibold">Links</h2>
+          <ul>
+            <li class="hover:-translate-y-1 transition-transform">
+              <i class="ri-linkedin-box-fill"></i><a href="https://in.linkedin.com/in/anand-vishwakarma-26a33b251?trk=public_post_feed-actor-image"
+                class=" ">linkedin </a>
+            </li>
+            <li class="hover:-translate-y-1 transition-transform">
+              <i class="ri-instagram-fill"></i>
+              <a href="https://www.instagram.com/anandvishwakarma3580/" class=" ">Instagram</a>
+            </li>
+            <li class="hover:-translate-y-1 transition-transform">
+              <i class="ri-github-fill"></i>
+              <a href="https://github.com/07Vishwakarma" class=" ">GitHub</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <!-- Gsap cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- ScrollTrigger cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
